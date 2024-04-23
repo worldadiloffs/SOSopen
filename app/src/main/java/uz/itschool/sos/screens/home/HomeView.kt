@@ -30,7 +30,7 @@ fun HomeView(navController: NavController) {
     list.add(Alerts("Hayvon ovozi", R.drawable.animal_img, Color.Green))
     list.add(Alerts("Mashina ovozi", R.drawable.car_img, Color.Blue))
     list.add(Alerts("Baland ovoz", R.drawable.public_relation, Color.Red))
-    list.add(Alerts("Baland ovoz", R.drawable.calling_img, Color.Cyan))
+    list.add(Alerts("Sizni chaqirishmoqda", R.drawable.calling_img, Color.Cyan))
 
     LazyColumn(
         modifier = Modifier.fillMaxWidth()

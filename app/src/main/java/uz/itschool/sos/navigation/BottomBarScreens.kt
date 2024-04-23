@@ -21,6 +21,12 @@ sealed class BottomBarScreens(
         icon = R.drawable.compass_bn_icon,
         iconFocused = R.drawable.compass_bn_icon_filled
     )
+    data object TextSpeech: BottomBarScreens(
+        route = "speech",
+        title = "Speech",
+        icon = R.drawable.speech_text_icon_notf,
+        iconFocused = R.drawable.speech_text_icon
+    )
     data object Settings: BottomBarScreens(
         route = "settings",
         title = "Settings",

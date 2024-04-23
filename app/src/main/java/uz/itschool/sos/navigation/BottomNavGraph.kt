@@ -10,6 +10,7 @@ import androidx.navigation.compose.composable
 import uz.itschool.sos.screens.settings.SettingsView
 import uz.itschool.sos.screens.compass.CompassView
 import uz.itschool.sos.screens.home.HomeView
+import uz.itschool.sos.screens.textspeech.TextToSpeech
 
 @Composable
 fun BottomNavGraph(navController: NavController, bottomNavController: NavHostController){
@@ -20,6 +21,9 @@ fun BottomNavGraph(navController: NavController, bottomNavController: NavHostCon
         }
         composable(BottomBarScreens.Compass.route){
             CompassView(navController)
+        }
+        composable(BottomBarScreens.TextSpeech.route){
+            TextToSpeech(navController)
         }
         composable(BottomBarScreens.Settings.route){
             SettingsView(navController)
