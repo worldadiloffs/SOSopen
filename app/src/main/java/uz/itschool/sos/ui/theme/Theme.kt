@@ -1,4 +1,4 @@
-package shamsiddin.project.sos.ui.theme
+package uz.itschool.sos.ui.theme
 
 import android.app.Activity
 import android.os.Build
