@@ -73,4 +73,11 @@ dependencies {
 
     //gson
     implementation ("com.google.code.gson:gson:2.10.1")
+
+    // Permissions
+    implementation ("com.google.accompanist:accompanist-permissions:0.28.0")
+
+    // Access old API
+    implementation ("androidx.appcompat:appcompat:1.6.1")
+
 }
