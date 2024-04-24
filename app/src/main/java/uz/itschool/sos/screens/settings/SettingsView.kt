@@ -51,6 +51,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -138,7 +139,11 @@ fun Profile(navController: NavController) {
             ProfileOutlinedEditText(string = "Joylashuv o'zgartirish", type = "")
             Spacer(modifier = Modifier.height(10.dp))
 
-
+            Text(
+                text = "Chiroq darajasi", modifier = Modifier
+                    .padding(horizontal = 16.dp).align(Alignment.Start),
+                textAlign = TextAlign.Start,
+            )
             Row(
                 modifier = Modifier
                     .padding(top = 10.dp)
@@ -154,6 +159,11 @@ fun Profile(navController: NavController) {
                     onValueChange = { sliderPosition = it }
                 )
             }
+            Text(
+                text = "Vibratsiya darajsi", modifier = Modifier
+                    .padding(horizontal = 16.dp).align(Alignment.Start),
+                textAlign = TextAlign.Start,
+            )
             Row(
                 modifier = Modifier
                     .padding(top = 10.dp)
@@ -175,7 +185,7 @@ fun Profile(navController: NavController) {
 
             ) {
                 Text(
-                    text = "Maxsus istisnolardan boshqa \n barcha signallar ovozini o`chiring"
+                    text = "Maxsus istisnolardan boshqa \nbarcha signallar ovozini o`chiring"
                 )
                 Spacer(modifier = Modifier.width(20.dp))
                 Switch(
@@ -191,7 +201,7 @@ fun Profile(navController: NavController) {
                 navController.navigate(ScreenType.Login.route)
             }) {
                 Text(
-                    text = "Log out",
+                    text = "Chiqish",
                     color = Color.White
                 )
             }

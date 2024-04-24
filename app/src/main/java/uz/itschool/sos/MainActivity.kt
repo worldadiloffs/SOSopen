@@ -19,10 +19,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.navigation.compose.rememberNavController
 import uz.itschool.sos.navigation.SetNavGraph
+import uz.itschool.sos.screens.textspeech.VoiceToTextParser
 import uz.itschool.sos.ui.theme.SOSTheme
 import java.util.Locale
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
