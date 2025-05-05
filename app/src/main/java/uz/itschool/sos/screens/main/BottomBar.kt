@@ -33,7 +33,7 @@ import uz.itschool.sos.ui.theme.NavBar_Selected
 
 @Composable
 fun BottomBar(bottomNavController: NavController){
-    val screens = listOf<BottomBarScreens>(BottomBarScreens.Home, BottomBarScreens.Compass, BottomBarScreens.TextSpeech, BottomBarScreens.Saved, BottomBarScreens.Settings)
+    val screens = listOf<BottomBarScreens>(BottomBarScreens.Home, BottomBarScreens.Compass, BottomBarScreens.Saved, BottomBarScreens.TextSpeech, BottomBarScreens.Settings)
     val navStackBackEntry by bottomNavController.currentBackStackEntryAsState()
     val currentDestination = navStackBackEntry?.destination
 
